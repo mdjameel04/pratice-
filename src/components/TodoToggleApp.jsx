@@ -29,7 +29,11 @@ const TodoToggleApp = () => {
     setnewTodo("")
     }
     
+   const deleteTodo =(id)=>{
+    const filteredTodos = todos.filter((todo)=>todo.id !==id);
+    settodos()
 
+   }
   return (
     <div className='p-6 max-w-md mx-auto '>
       <h2 className='text-2xl font-bold mb-4'> Todo App</h2>
